@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 @use './typography' as *;
 
 :root {
@@ -7,5 +8,5 @@
 
 body {
     font-family: $default-font-family;
-    
+    @include dimension(100vh, 100vw);
 }

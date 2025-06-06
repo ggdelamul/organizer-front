@@ -1,0 +1,33 @@
+@use "./variables" as *;
+
+@mixin dimension($height, $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flex($direction, $gap, $align, $justify) {
+    display: flex;
+    flex-direction: $direction;
+    gap: $gap;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin grid($columns, $gap: 1rem) {
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    gap: $gap;
+}
+
+@mixin box-shadow {
+    box-shadow: 0 4px 4px rgba($black, 0.25);
+}
+
+@mixin border($color: null, $width: null, $radius:null, $isbordervisible: false) {
+    @if $isbordervisible {
+    border:solid $width $color;
+    }
+
+    border-radius: $radius;
+}
+

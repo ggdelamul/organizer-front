@@ -80,6 +80,46 @@ h4 {
 
 body {
   font-family: "Nunito Sans", sans-serif;
+  width: 100vw;
+  height: 100vh;
+}
+
+button {
+  width: 163px;
+  height: 45px;
+  background-color: #32398E;
+  color: #FFFDFD;
+  border: none;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+}
+button:hover {
+  cursor: pointer;
+}
+button:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #9747FF;
+  border: solid 3px #FFFDFD;
+}
+button:active {
+  box-shadow: none;
+  transition: 0.3s;
+}
+
+.btn-large {
+  width: 411px;
+  height: 29px;
+}
+
+.btn-small {
+  width: 87px;
+  height: 29px;
+}
+
+.btn-rectangle {
+  width: 134px;
+  height: 42px;
+  border-radius: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
