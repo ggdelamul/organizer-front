@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../base/typography" as *;
+
+.dashboard-container {
+    @include grid(12, 7, 0);
+}

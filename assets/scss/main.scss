@@ -1,8 +1,18 @@
-@use 'abstracts/variables';
-@use 'abstracts/mixins';
+@use "abstracts/variables";
+@use "abstracts/mixins";
 
-@use 'base/reset';
-@use 'base/base';
-@use 'base/typography';
+@use "base/reset";
+@use "base/base";
+@use "base/typography";
 
-@use 'components/buttons';
+@use "components/buttons";
+@use "components/inputs";
+@use "components/icones";
+@use "components/images";
+
+@use "layout/navbar";
+@use "layout/main-container";
+@use "layout/filters";
+@use "layout/header";
+
+@use "pages/dashboard";

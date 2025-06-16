@@ -2,25 +2,20 @@
 @use "../abstracts/mixins" as *;
 @use "../base/typography" as *;
 
-@mixin button(
-    $height,
-    $width,
-    $background-color,
-    $text-color,
-    $shadow: false
-) {
-
-    @include dimension($height,$width);
+@mixin button($height, $width, $max-width: null, $background-color, $text-color, $shadow: false) {
+    @include dimension($height: $height, $width: $width, $max-width: $max-width);
     background-color: $background-color;
     color: $text-color;
     border: none;
     @if $shadow {
         @include box-shadow;
+        &:hover {
+            @include box-shadow;
+        }
     }
 
     &:hover {
         cursor: pointer;
-       
     }
 
     // &:active {
@@ -29,14 +24,12 @@
 }
 
 button {
-    @include button(45px,163px, $background-main ,$darker-white, true );
+    @include button(clamp(35px, 5vw, 45px), 100%, 163px, $background-main, $darker-white, false);
     @include border($radius: 30px);
-    
+
     &:hover {
-        @include box-shadow;
-         background-color: $primary;
-         @include border($color: $darker-white, $width: 3px, $isbordervisible: true);
-        
+        background-color: $primary;
+        @include border($color: $darker-white, $width: 3px, $isbordervisible: true);
     }
     &:active {
         box-shadow: none;
@@ -45,14 +38,13 @@ button {
 }
 
 .btn-large {
-     @include dimension(29px,411px);
+    @include dimension($height: clamp(25px, 5vw, 29px), $width: 100%, $max-width: 411px);
 }
 .btn-small {
-     @include dimension(29px,87px);
-
+    @include dimension($height: clamp(25px, 5vw, 29px), $width: 100%, $max-width: 87px);
 }
+
 .btn-rectangle {
-     @include dimension(42px,134px);
-     @include border($radius: 10px)
- 
+    @include dimension($height: clamp(35px, 5vw, 42px), $width: 100%, $max-width: 134px);
+    @include border($radius: 10px);
 }

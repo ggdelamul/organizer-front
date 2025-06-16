@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../base/typography" as *;
+
+
+
+.dashboard-main-container {
+    // @include dimension($height: 70%);
+    background: $background-gradient;
+    grid-column: 3/11;
+    grid-row: 2/8;
+    align-items: end;
+}

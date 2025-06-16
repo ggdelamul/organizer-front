@@ -1,6 +1,6 @@
-@use '../abstracts/variables' as *;
-@use '../abstracts/mixins' as *;
-@use './typography' as *;
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "./typography" as *;
 
 :root {
     font-size: 16px;
@@ -9,4 +9,8 @@
 body {
     font-family: $default-font-family;
     @include dimension(100vh, 100vw);
+}
+
+img {
+    width: 100%;
 }

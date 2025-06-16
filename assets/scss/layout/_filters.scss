@@ -1,0 +1,11 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "../base/typography" as *;
+
+
+.dashboard-filters-container {
+    // @include dimension($height: 100%);
+    background-color: $background-main;
+    grid-column: 11/13;
+    grid-row: 2/8;
+}
