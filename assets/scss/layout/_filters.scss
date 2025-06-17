@@ -8,4 +8,13 @@
     grid-column: 11/13;
     grid-row: 2/8;
     color: $white;
+    
+}
+
+.filters-container {
+    @include flex(column, 3rem, center);
+    margin-top: 4rem;
+    li{
+        cursor: pointer;
+    }
 }

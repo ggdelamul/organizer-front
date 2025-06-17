@@ -9,7 +9,6 @@
     color: $white;
     padding: 1rem;
     @include flex(column, 3rem);
-    
 }
 
 .nav-header {
@@ -31,14 +30,15 @@
 
 .navigation-title {
     margin-left: 3.5rem;
-    font-weight: $font-weight-bold
+    font-weight: $font-weight-bold;
 }
 .navigation {
     @include flex(column, 1rem);
-}
-.navigation > li {
-    @include flex(row, 2rem, center);
-    cursor: pointer;
+
+    li {
+        @include flex(row, 2rem, center);
+        cursor: pointer;
+    }
 }
 
 .nav-footer {
