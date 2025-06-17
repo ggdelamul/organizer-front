@@ -2,7 +2,6 @@
 @use "../abstracts/mixins" as *;
 @use "../base/typography" as *;
 
-
 .dashboard-header-container {
     grid-column: 3/13;
     grid-row: 1/2;
@@ -10,6 +9,7 @@
     background-color: $background-main;
     @include flex(row, 2px, center, space-between);
     padding: 2rem;
+    color: $white;
 }
 
 .burger-menu {
@@ -21,4 +21,3 @@
     background-color: $input-color;
     @include border($radius: 50%);
 }
-
